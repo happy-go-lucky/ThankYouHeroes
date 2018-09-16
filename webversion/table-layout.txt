@@ -1,0 +1,6 @@
+employeeUserid: string (unique)
+location: Object
+eventDate:Date
+comments:String
+serviceIconCode:integer
+emoticonCode:integer
