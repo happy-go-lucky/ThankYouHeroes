@@ -26,9 +26,8 @@ export default {
   },
   methods: {
     async getPosts () {
-      const response = await PostsService.fetchPosts()
+      const response = await PostsService.methods.fetchPosts()
       this.posts = response.data
-      console.log(this.posts)
     }
   }
 }

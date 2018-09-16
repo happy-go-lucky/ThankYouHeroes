@@ -17,6 +17,11 @@ app.get('/posts', (req, res) => {
   )
 })
 
+app.post('/new-thank-you', (req, res) => {
+  console.log(req);
+  res.send("received, done!");
+})
+
 app.listen(process.env.PORT || 8081)
 
 // connect with mongodb
