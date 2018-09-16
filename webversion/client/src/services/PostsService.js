@@ -1,7 +1,12 @@
 import Api from '@/services/Api'
 
 export default {
-  fetchPosts () {
-    return Api().get('posts')
+  methods: {
+    fetchPosts () {
+      return Api().get('posts')
+    },
+    sendThankYouMessage (msg) {
+      return Api().post('new-thank-you', msg)
+    }
   }
 }
