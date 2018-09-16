@@ -25,3 +25,8 @@ md "\data\db" "\data\log"
 "C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="c:\data\db"
 # by default runs on port 27017
 ```
+
+# To upload the database files to git:
+mongodump --db="SourceDBname" --out="path\to\data-backup"
+# then upload the folder to git and run the following command locally to update your local database.
+mongorestore --db="TargetDBname" "path\to\backupfiles"
