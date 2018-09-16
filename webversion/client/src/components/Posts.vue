@@ -3,7 +3,7 @@
     <h1>Posts</h1>
     This file will list all the posts.
 
-    <div v-for="post in posts">
+    <div v-for="post in posts" v-bind:key="post in posts">
       <p>
         <span><b>{{ post.title }}</b></span><br />
         <span>{{ post.description }}</span>
@@ -28,6 +28,7 @@ export default {
     async getPosts () {
       const response = await PostsService.fetchPosts()
       this.posts = response.data
+      console.log(this.posts)
     }
   }
 }
