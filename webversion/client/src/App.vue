@@ -19,6 +19,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+}
+.hero-head {
+  background-color: lightcoral;
+}
+.hero-foot {
+  background-color: lightcoral;
+}
+html {
+  text-align: center;
 }
 </style>
